@@ -1,0 +1,79 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.css" integrity="sha256-EYSmiSz2daAX5Xq+m8lxGFf+qWABUgdCPUvU5X0vpI4=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js" integrity="sha256-rVf3H94DblhP4Z6wLSa2mpMwRS5qePBWykE6QWPOaO0=" crossorigin="anonymous"></script>
+    <script src="../../configNui.js" type="text/javascript"></script>
+    <script src="scripts.js" type="text/javascript"></script>
+    <script src="debounce.min.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="sweetalert2.all.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <div class="full-screen">
+
+        <div class="container">
+
+            <button class="btnClose"><i class="fas fa-times fa-2x"></i></button>
+
+            <div class="style-2">
+                <div id="sections" class="flex">
+                    <div id="pitems" class="flex">
+                        <div class="inv_esquerda">
+                            <div class="inv_e_label">Itens</div>
+                            <div id="container1">
+                                <div class="inner-pitems" data-name="${element.name}" data-amount="${element.amount}" data-idname="${element.idname}" data-itemWeight="${element.item_peso}" style="background-image: url('assets/icons/${element.icon}'); background-size: 80px 80px;">
+                                    <p class="amount">${element.amount} <span class="peso">${element.item_peso}Kg</span></p>
+                                    <p class="name">${element.name}</p>
+                                </div>
+                                <div class="inner-pitems" data-name="${element.name}" data-amount="${element.amount}" data-idname="${element.idname}" data-itemWeight="${element.item_peso}" style="background-image: url('assets/icons/${element.icon}'); background-size: 80px 80px;">
+                                    <p class="amount">${element.amount} <span class="peso">${element.item_peso}Kg</span></p>
+                                    <p class="name">${element.name}</p>
+                                </div>
+                                <div class="inner-pitems" data-name="${element.name}" data-amount="${element.amount}" data-idname="${element.idname}" data-itemWeight="${element.item_peso}" style="background-image: url('assets/icons/${element.icon}'); background-size: 80px 80px;">
+                                    <p class="amount">${element.amount} <span class="peso">${element.item_peso}Kg</span></p>
+                                    <p class="name">${element.name}</p>
+                                </div>
+                                <div class="inner-pitems" data-name="${element.name}" data-amount="${element.amount}" data-idname="${element.idname}" data-itemWeight="${element.item_peso}" style="background-image: url('assets/icons/${element.icon}'); background-size: 80px 80px;">
+                                    <p class="amount">${element.amount} <span class="peso">${element.item_peso}Kg</span></p>
+                                    <p class="name">${element.name}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inv_esquerda_items"></div>
+                    </div>
+                    <div id="Receitas" class="flex">
+                        <div class="Receita_esquerda">
+                            <div class="inv_e_label">Receitas</div>
+                            <div id="container2">
+                                <div class="inner-pitems" data-name="${element.name}" data-amount="${element.amount}" data-idname="${element.idname}" data-itemWeight="${element.item_peso}" style="background-image: url('assets/icons/${element.icon}'); background-size: 80px 80px;">
+                                    <p class="amount">${element.amount} <span class="peso">${element.item_peso}Kg</span></p>
+                                    <p class="name">${element.name}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inv_esquerda_items"></div>
+                    </div>
+                    <div id="Craft" class="flex">
+                        <div class="Craft_esquerda">
+                            <div class="inv_e_label">Crafting</div>
+                            <div id="container3">
+                                <div class="inner-pitems" data-name="${element.name}" data-amount="${element.amount}" data-idname="${element.idname}" data-itemWeight="${element.item_peso}" style="background-image: url('assets/icons/${element.icon}'); background-size: 80px 80px;">
+                                    <p class="amount">${element.amount} <span class="peso">${element.item_peso}Kg</span></p>
+                                    <p class="name">${element.name}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inv_esquerda_items"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
